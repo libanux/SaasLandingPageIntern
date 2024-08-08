@@ -1,0 +1,197 @@
+
+body{
+    background-color: #0f172a;
+    height:100vh;
+    width:100%;
+}
+
+.part-three {
+    background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-bottom: 8%;
+  /* width: 100%; */
+}
+
+#title-part3 {
+
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 61.6px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+
+.flex3-item {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 26.4px;
+  text-align: left;
+  color: white;
+}
+
+#container-part3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#container-part4 {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #0f172a;
+}
+
+#description-part4 {
+    margin-top: 5%;
+  width: 50%;
+  color: white;
+  margin-left: 5%;
+}
+
+#description-part4 h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+#description-part4 h1:before {
+    color: #C084FC;
+    content: "Unlimited ";
+  }
+
+
+
+#description-part4 h6 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+
+#description-part4 P {
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+#description-part4 button{
+  font-weight: 400;
+  font-size: 1rem;
+  background: transparent;
+  COLOR:    white;
+  border: none;
+  
+}
+
+#img-part4{
+    width:50%;
+   margin-left: 10%;
+}
+
+.part-five{
+   width:100%;
+    background-color: #0f172a;
+   
+}
+
+#container-part5{
+
+    background-color: #0f172a;
+ display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+#description-part5{
+    margin-left:5%;
+}
+
+#description-part5 h1{
+    font-weight: 800;
+    font-size: 3rem;
+    margin-top: 0;
+    color:white;
+}
+
+#description-part5 h6{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color:white;
+    letter-spacing: 2px;
+}
+
+#description-part5 p{
+   
+    font-size: .8rem;
+    color:white;
+   
+}
+
+#img-part5{
+   margin-left: 10%;
+   margin-right: 5%;
+   margin-top: 10%;
+}
+   
+
+#container-part6 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #0f172a;
+  }
+  
+  #description-part6 {
+
+    margin-top: 5%;
+    width: 40%;
+    color: white;
+    margin-left: 5%;
+  }
+  
+  #description-part6 h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  
+  
+  
+  #description-part6 h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  #description-part6 P {
+    font-weight: 300;
+    font-size: .9rem;
+  }
+  
+  #description-part6 button{
+    font-weight: 400;
+    font-size: 1rem;
+    background: transparent;
+    COLOR:    white;
+    border: none;
+    
+  }
+
+  #img-part6{
+    padding-right:20%;
+  }
