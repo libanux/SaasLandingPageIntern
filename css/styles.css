@@ -1,5 +1,6 @@
 body {
 
+  overflow-x: hidden;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -75,7 +76,7 @@ body {
 }
 
 
-#description-part4 {
+#description-part4, #description-part5, #description-part6 {
   margin-top: 5%;
   width: 50%;
   margin-left: 5%;
@@ -200,6 +201,7 @@ body {
 }
 
 @media (max-width: 768px) {
+  
   .part-three {
     padding: 3%;
     padding-bottom: 5%;
@@ -288,12 +290,19 @@ body {
 
     width: 100%;
     margin: 0;
+    align-items: center;
+    display: contents;
+
     padding: 0;
   }
 
-  #img-part4 {
-   order:-1;
-  }
+  #img-part4, #img-part5, #img-part6 {
+    display: flex;
+    flex-direction: column; 
+    order: -1;
+}
+
+  
 
   #img-part5 {
     width: 90%; 
