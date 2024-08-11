@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 .part-seven {
     background: rgba(15, 23, 42, 1);
     width: 100%;
@@ -62,6 +67,7 @@
     align-items: center;
     overflow: hidden;
     flex-shrink: 0;
+    width: 35%;
 }
 
 #pt7-img img {
@@ -81,6 +87,22 @@
 
 .part-eight-container {
     display: flex;
+    justify-content: space-between;
+    height: 100%;
+    /* padding: 0 5%; */
+    box-sizing: border-box;
+}
+
+.pt8-column1, .pt8-column2, .pt8-column3 {
+    flex: 1; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pt8-column1 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 15%;
 }
 
 #pt8-h1 {
@@ -113,15 +135,8 @@
     text-align: left;
 }
 
-.pt8-column1 {
-    margin-left: 5%;
-    text-align: center;
-    justify-content: center;
-    margin-top: 15%;
-}
-
 #pt8-button {
-    background-color: rgba(88, 28, 135, 1);
+    background: transparent;
     border: none;
 }
 
@@ -132,12 +147,12 @@
 }
 
 #mobile-app-pic {
-    width: fit-content;
-    height: 90vh;
+    width: 100%; 
+    height: fit-content;
+    margin-left: 30%;
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
-    margin-right: 50%;
+   
 }
 
 .pt8-column3 {
@@ -145,6 +160,11 @@
     margin-left: 22%;
     height: fit-content;
     margin-top: 15%;
+}
+
+#pt8-column3-h1 {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 4%;
 }
 
 #pt8-column3-h2 {
@@ -155,11 +175,6 @@
 #second-pic-pt8 {
     width: 100%;
     height: 5%;
-}
-
-#pt8-column3-h1 {
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 4%;
 }
 
 .part-nine {
@@ -260,7 +275,7 @@
 
 #pt9-row-btn-location {
     justify-self: end;
-    margin-right: 22%; /* Shift button 5% to the left */
+    margin-right: 22%; 
 }
 
 #pt9-row-btn {
@@ -276,7 +291,7 @@
     margin-bottom: 0%;
 }
 
-/* Style for the top-left corner buttons */
+
 .corner-btn {
     position: absolute;
     top: 30px;
@@ -293,3 +308,124 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .part-seven-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+       
+    }
+
+    #pt7-img {
+        width: 100%; 
+        order: -1; 
+        margin-bottom: 20px; 
+    }
+
+    #pt7-img img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .part-seven-item {
+        width: 100%; 
+    }
+
+    #pt7-1 {
+        margin-bottom: 8px; 
+    }
+
+    #pt7-2 {
+        font-size: 20px; 
+        margin-bottom: 12px;
+    }
+
+    #pt7-3 {
+        font-size: 14px; 
+        margin-bottom: 20px; 
+    }
+
+    .part-eight-container {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .part-eight {
+      
+        height: 150vh;
+        padding: 0px 0px 0px 0px;
+       
+    }
+
+
+
+
+    .pt8-column1, .pt8-column2, .pt8-column3 {
+        width: 100%; 
+    }
+
+    .pt8-column2 {
+        order: 1; 
+        display: flex;
+        justify-content: center; 
+    }
+
+    .pt8-column3 {
+        order: 2; 
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    #mobile-app-pic {
+        width: 100%; 
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #pt8-column3-h1 {
+        font-size: 16px;
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    #pt8-column3-h2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #second-pic-pt8 {
+        width: 50%;
+        height: auto;
+    }
+
+    .pt9-grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .pt9-grid-item {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #pt9-row1-title, #pt9-h1-text1, #pt9-h1-text2, #pt9-h1-text3 {
+        font-size: 20px;
+    }
+
+    #pt9-h2-text1, #pt9-h2-text2, #pt9-h2-text3 {
+        font-size: 16px;
+    }
+
+    .pt9-row1 {
+        display: block;
+    }
+}
+
+
