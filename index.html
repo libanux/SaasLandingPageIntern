@@ -6,40 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <title>Document</title>
 </head>
 
 <body>
     <div class="part-one">
         <ul>
-            <li class="weeb"><a class="active" href="#home">weeb</a></li>
-            <li class="item2"><a href="#news">About Us</a></li>
-            <li class="item2"><a href="#contact">Solutions</a></li>
-            <li class="item2"><a href="#about">Pricing</a></li>
-            <li class="item2"><a href="#about">Resources</a></li>
-            <li class="joinNow"><button class="btnjoin">Join Now</button></li>
-            <li class="login"><button class="btnlog">Log In</button></li>
+            <li class="weeb1 weeb2 "><a class="active" href="#home">weeb</a></li>
+            <div class="part1-1">
+                <li class="item2"><a href="#news">About Us</a></li>
+                <li class="item2"><a href="#contact">Solutions</a></li>
+                <li class="item2"><a href="#about">Pricing</a></li>
+                <li class="item2"><a href="#about">Resources</a></li>
+            </div>
+            <div style="height: auto;
+          align-content: normal;
+          background-color: red;
+          width: 100%;
+          position: relative;
+          /* left: 4%; */
+          /* width: fit-content; */
+          align-content: flex-end;
+          padding-left: 25%;
+          width: 59%;
+          top: -59px;">
+                <li class="joinNow"><button class="btnjoin">Join Now</button></li>
+                <li class="login"><button class="btnlog">Log In</button></li>
+            
+            </div>
+           
         </ul>
     </div>
-
-    <div class="part-two">
+    <div class="dropdwn" style="position: relative;
+    width: 109%;
+    top: 1%;">
+    <ul>
+        <li class="dropdown">
+            <a class="dropbtn"><img style="    position: relative;
+    top: -68px;" src="./img2/Vector.png"></a>
+            <div class="dropdown-content">
+            <a href="#news">About Us</a>
+            <a href="#contact">Solutions</a>
+             <a href="#about">Pricing</a>
+             <a href="#about">Resources</a>
+          
+            </div></ul></div>
+   
+            <div class="part-two">
         <div class="design-fatser">
             <div>
                 <span class="design-fatser-intern">Design</span>
-                <span class="design-fatser-intern" style="text-decoration: underline; text-decoration-color: #C084FC;">Faster</span>
+                <span class="design-fatser-intern faster">Faster</span>
                 <span class="design-fatser-intern" style="color: #9333EA;">&</span>
-                <span class="design-fatser-intern" style="text-decoration:overline; text-decoration-color: #C084FC;">Better</span>
+                <span class="design-fatser-intern"
+                    style="text-decoration:overline; text-decoration-color: #C084FC;">Better</span>
             </div>
             <div style="display: flex; justify-content: center;">
-                <p style="font-size: 83%; width: 50%; text-align: center; position: relative; line-height: 150%; margin-top: 1.5%;">
-                    Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
+                <p
+                    style="font-size: 83%; width: 50%; text-align: center; position: relative; line-height: 150%; margin-top: 1.5%;">
+                    Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
+                    Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
                 </p>
             </div>
         </div>
-        <div style="display: flex; justify-content: center; padding: 1%;">
-            <button class="btnnow" style="color: white; background: #9333EA; border-style: none;">Join Now</button>
-            <button class="btnnow" style="color: white; background: #0F172A; border-color: white;">View Demo</button>
+
+        <div class="part2-btn" style="display: flex; justify-content: center; padding: 1%;">
+            <button class="btnnow nowp2" 
+               >Join Now</button>
+            <button class="btnnow viewp2">View Demo</button>
         </div>
+        
         <div style="display: flex; justify-content: center;">
             <img class="imgfaster" src="./img2/Desktop-App-Placeholder-1@2x.png">
         </div>
@@ -73,11 +112,13 @@
             <div id="description-part4">
                 <h6>DISCOVER</h6>
                 <h1>Ideas for your next great projects</h1>
-                <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
+                    gravida ac, rutrum molestie adipiscing lacinia.</p>
                 <button>Discover Ideas <img src="./img/Arrow.png" alt="" /></button>
             </div>
             <div id="img-part4">
-                <img src="./img/Shapes.png" style="margin-top: 5%; height: 50vh; object-fit: contain; align-items: center;" alt="" />
+                <img src="./img/Shapes.png"
+                    style="margin-top: 5%; height: 50vh; object-fit: contain; align-items: center;" alt="" />
             </div>
         </div>
     </div>
@@ -87,7 +128,8 @@
             <div id="description-part5">
                 <h6>POWERFUL</h6>
                 <h1>All the tools you can imagine</h1>
-                <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
+                    gravida ac, rutrum molestie adipiscing lacinia.</p>
             </div>
             <div id="img-part5">
                 <img src="./img/Desktop.png" alt="" style="height: 80vh; object-fit: contain" />
@@ -100,7 +142,8 @@
             <div id="description-part6">
                 <h6>CUSTOMERS</h6>
                 <h1>Target customers with our powerful AI kit</h1>
-                <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
+                    gravida ac, rutrum molestie adipiscing lacinia.</p>
                 <button>How Targeting Customers Works <img src="./img/Arrow.png" alt="" /></button>
             </div>
             <div id="img-part6">
@@ -114,7 +157,8 @@
             <div class="part-seven-item">
                 <div id="pt7-1">SPEED</div>
                 <div id="pt7-2">Work fast, w/o interruptions</div>
-                <div id="pt7-3">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</div>
+                <div id="pt7-3">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh
+                    sapien elit gravida ac, rutrum molestie adipiscing lacinia.</div>
             </div>
             <div id="pt7-img">
                 <img src="image1/Desktop.png" alt="part 7 img">
@@ -138,7 +182,8 @@
                 <div><img src="image1/Mobile-App-Placeholder-2.png" alt="pic for p8" id="mobile-app-pic"></div>
             </div>
             <div class="pt8-column3">
-                <div id="pt8-column3-h1">“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”</div>
+                <div id="pt8-column3-h1">“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui
+                    consequat turpis scelerisque faucibus.”</div>
                 <div id="pt8-column3-h2">
                     <img src="image1/User-card.png" alt="User-card" id="second-pic-pt8">
                 </div>
@@ -149,9 +194,28 @@
     <div class="part-nine"></div>
     <div class="part-ten">
         <div class="part10-1"> </div>
-        <div class="part10-2"> </div>
-
+        <div class="part10-2" style="background-color: white;">
+            
+            <p style="margin-top: 0%;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            align-self: end;
+            display: inline-block;
+            position: relative;
+            top: 16px;
+            font-size: 12px;font-family: Roboto;">@ 2023 Weeb, Inc. All rights reserved</p> 
+            <footer>
+            <span> <i class="bi bi-youtube"></i> </span>
+            <span> <i class="bi bi-facebook"></i></span>
+            <span> <i class="bi bi-twitter"></i></span>
+            <span> <i class="bi bi-instagram"></i></span>
+            <span><i class="bi bi-linkedin"></i></span></footer>
+        </div>
     </div>
+    
+
+
 
     <script src="./js/script.js"></script>
 </body>
