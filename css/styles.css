@@ -312,11 +312,10 @@ body{
   justify-content: center;
 }
 
-.weeb{
+.weeb1{
   font-size: 150%;
   font-family: sans-serif;
   font-weight: 600;
-
 }
 
 .item2{
@@ -330,11 +329,20 @@ body{
   position: absolute;
   top: 5%;
   left: 68%; 
+  width: 8%;
+ 
+  display: block;
 }
 
+.btnjoin:hover{
+  background-color: #C084FC;
+}
+.btnlog:hover{
+  background-color: #C084FC;
+}
 .login{
   position: absolute;
-  top: 9%;
+  top:30px;
   left: 69%;
   font-size: 85%;
   list-style: none;
@@ -353,7 +361,7 @@ body{
   float: left;
 }
 
-.part-one ul li a {
+.part-one ul .part1-1 li a {
   display: block;
   color: white;
   text-align: center;
@@ -361,8 +369,112 @@ body{
   text-decoration: none;
 }
 
+.weeb1 a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 21px;
+  text-decoration: none;
+}
+
+.dropdown{
+display: none;
+float: left;
+position: relative;
+left: 65%;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  height: 220px;
+  top: -49px;
+    border-radius: 10px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media only screen and (max-width: 950px) {
+.item2{
+  display: none;
+}
+.login{
+  display: none;
+}
+.joinNow{
+  display:none;
+}
+.dropdown{
+  display: inline-block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+.dropdown-content a:hover{
+background-color: #202233;
+color:white;
+}
+.part-one ul .part1-1 li a{
+  display: none;
+}
+.weeb1 a{
+  display: none;
+}
+
+.weeb2 a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px;
+}
+.weeb1{
+  font-size: 130%;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.dropdown:hover{
+  .part-one ul{
+    height: 200px;
+  }
+}
+
+.part-two .design-fatser .faster{
+  text-decoration: none;
+  
+}
+.part-two .design-fatser .design-fatser-intern{
+  font-size: 300%;
+}
+.part-two .btnnow{
+  width: 18%;
+}
+.part-two .imgfaster{
+  height: 10%;
+}
+}
+
+
+.faster{
+  text-decoration: underline; text-decoration-color: #C084FC;
+}
+
 .part-one ul li a:hover {
   background-color: #111;
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
 .btnjoin{
@@ -389,6 +501,7 @@ body{
  
               border-style: none;
               font-size: 100%;
+              border-radius: 6px;
  }
 
  .design-fatser{
@@ -415,6 +528,17 @@ body{
   margin-left: 1%;
   font-family: Roboto;
  }
+.btnnow:hover{
+  background-color: #512f5e;
+ }
+
+ .nowp2{
+  color: white; background: #9333EA; border-style: none;
+ }
+ .viewp2{
+  color: white; background: #0F172A; border-color: white;
+ }
+
  .imgfaster{
 
   width: 100%;
@@ -862,3 +986,13 @@ body{
 }
 
 
+  footer{
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-right: 5%;
+    padding-bottom: -1px;
+    position: relative;
+    /* margin-bottom: 22px; */
+    top: -14px;
+  }
