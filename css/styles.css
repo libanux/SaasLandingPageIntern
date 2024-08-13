@@ -6,7 +6,15 @@ padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+div {
+  overflow-x: hidden;
+}
 .part-seven {
     background: rgba(15, 23, 42, 1);
 
@@ -451,6 +459,7 @@ color:white;
 .part-one ul .part1-1 li a{
   display: none;
 }
+
 .weeb1 a{
   display: none;
 }
