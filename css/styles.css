@@ -1,5 +1,7 @@
 body {
-
+height: 100vh;
+width: 100%;
+padding: 0;
   overflow-x: hidden;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -614,6 +616,9 @@ footer{
 }
 
 @media only screen and (max-width:600px){
+  body{
+    overflow-x: hidden;
+  }
   #part-10-1 { display: flex; flex-direction: column;align-items: center; padding: 20px; border-top: 1px solid #ddd;background-color: white; }
   .column-header {
     margin-bottom: 10px;
@@ -866,8 +871,6 @@ footer {
     width: 100%;
     height: 5%;
 }
-<<<<<<< HEAD
-=======
 
 .part-nine {
     background: rgba(255, 255, 255, 1);
@@ -1006,6 +1009,9 @@ footer {
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
     .part-seven-container {
         display: flex;
         flex-direction: column;
@@ -1134,4 +1140,4 @@ footer {
     /* margin-bottom: 22px; */
     top: -14px;
   }
->>>>>>> 259199a815b84bd60fb09eefce8a3c7b0a302330
+
