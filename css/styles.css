@@ -12,9 +12,9 @@ html, body {
   padding: 0;
   width: 100%;
 }
-div {
+/* div {
   overflow-x: hidden;
-}
+} */
 .part-seven {
     background: rgba(15, 23, 42, 1);
 
