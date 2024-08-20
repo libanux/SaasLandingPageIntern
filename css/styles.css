@@ -6,6 +6,125 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
+.btn{
+  display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-menu{
+  margin-top: 10%;
+}
+.menu-btnjoin{
+  width: 92px;
+  padding: 5%;
+  display: inline;
+  border-radius: 10px;
+    background: #9333ea;
+    color: white;
+   
+}
+.menu-btnlog{
+  width: 92px;
+  padding: 5%;
+  display: inline;
+  border-radius: 10px;
+    background: #9333ea;
+    color: white;
+    
+}
+.menu-btnlog:hover{
+  background-color: red;
+  cursor: pointer;
+}
+.menu-btnjoin:hover{
+  background-color: red;
+  cursor: pointer;
+}
+/* Menu toggle button styles */
+.menu-toggle {
+  font-size: 24px;
+  /* background: none; */
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  display: none;
+}
+.menu-a{
+  margin-top: 10%;
+  margin-top: 10%;
+    background-color: #9333ea;
+    display: flex;
+    justify-content: center;
+    /* margin-right: 2%; */
+    padding: 10%;
+  display: flex;
+  justify-content: center;
+  /* margin-right: 2%; */
+  padding: 10%;
+ 
+    width: 87%;
+
+}
+.menu-a:hover{
+  background-color: #C084FC;
+  cursor: pointer;
+}
+.menu-style{
+  text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.weebb:hover{
+  cursor: pointer;
+}
+/* Drawer menu styles */
+.drawer-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow: auto;
+  z-index: 1000;
+  padding-top: 20px;
+  display: none; /* Hide by default */
+}
+
+/* Show the drawer menu when active */
+.drawer-menu.active {
+  transform: translateX(0);
+  display: none;
+}
+
+/* Close button styles */
+.drawer-menu .drawer-close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Hide the drawer menu on larger screens */
+@media (min-width: 768px) {
+ 
+  .drawer-menu {
+      display: none;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -13,9 +132,8 @@ body {
   padding: 0;
   width: 100%;
 }
-/* div {
-  overflow-x: hidden;
-} */
+
+
 .part-seven {
   background: rgba(15, 23, 42, 1);
 }
@@ -222,11 +340,17 @@ cursor: pointer;
 }
 
 @media (max-width: 768px) {
+
+  
+  .menu-toggle{
+    display: block;
+
   body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 100%;
+
   }
   .part-three {
     padding: 3%;
@@ -358,6 +482,7 @@ body {
 }
 .part-one {
   display: flex;
+  
   justify-content: center;
 }
 
@@ -367,19 +492,19 @@ body {
   font-weight: 600;
 }
 
-.item2 {
-  font-size: 78%;
-  /* font-weight: 600; */
-  font-family: sans-serif;
-  margin-top: 0.8%;
-}
-.joinNow {
-  position: absolute;
-  top: 5%;
-  left: 68%;
-  width: 8%;
 
-  display: block;
+.weeb1:hover{
+  cursor: pointer;
+}
+.weeb2:hover{
+  cursor: pointer;
+}
+
+.part1-drop{
+  background-color: red;
+  height: 44%;
+  width: 3%;
+
 }
 
 .btnjoin:hover {
@@ -388,13 +513,7 @@ body {
 .btnlog:hover {
   background-color: #c084fc;
 }
-.login {
-  position: absolute;
-  top: 30px;
-  left: 69%;
-  font-size: 85%;
-  list-style: none;
-}
+
 .part-one ul {
   padding: 1.3%;
   border-radius: 20px;
@@ -402,6 +521,10 @@ body {
   overflow: hidden;
   background-color: #202233;
   width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  justify-content: space-between;
 }
 
 .part-one ul li {
@@ -412,7 +535,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 15px 21px;
+  
   text-decoration: none;
 }
 
@@ -420,7 +543,6 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 15px 21px;
   text-decoration: none;
 }
 
@@ -447,31 +569,31 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
-  .item2 {
-    display: none;
-  }
-  .login {
-    display: none;
-  }
-  .joinNow {
-    display: none;
-  }
-  .dropdown {
-    display: inline-block;
-  }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+
+
+  .drawer-menu.active {
+    transform: translateX(0);
     display: block;
-    text-align: left;
+    background: #253a55;
   }
-  .dropdown-content a:hover {
-    background-color: #202233;
-    color: white;
-  }
-  .part-one ul .part1-1 li a {
-    display: none;
+.item2{
+  display: none;
+}
+.login{
+  display: none;
+}
+.joinNow{
+  display:none;
+}
+.dropdown{
+  display: inline-block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
   }
 
   .weeb1 a {
@@ -515,39 +637,119 @@ body {
   text-decoration-color: #c084fc;
 }
 
-.part-one ul li a:hover {
+/* .part-one ul li a:hover {
   background-color: #111;
   text-decoration: underline;
   text-decoration-color: red;
+} */
+
+/* Base styles for links */
+.part-one ul li a {
+  position: relative; /* Required for absolute positioning of the pseudo-element */
+  display: inline-block; /* Ensures the pseudo-element fits the text width */
+  /* Keeps the link text color */
+  text-decoration: none; /* Remove default underline */
 }
 
-.btnjoin {
-  width: 222%;
-  /* height: 139%; */
-  padding: 29%;
-  position: relative;
-  left: 177%;
+
+/* Pseudo-element for the animated underline */
+.part-one  ul li a::after {
+  content: ''; /* Empty content */
+  position: absolute; /* Absolute positioning for animation */
+  left: 0; /* Start from the left */
+  bottom: 0; /* Align with the bottom */
+  width: 0; /* Start with width 0 */
+  height: 2px; /* Thickness of the underline */
+  background-color: #fff; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Animation on hover */
+.part-one ul li a:hover::after {
+  width: 100%; /* Expand to full width */
+}
+
+
+.part1-3{
   height: 100%;
-  top: 14px;
-  border-radius: 6px;
-  color: white;
-  background: #9333ea;
-  /* border-color: #9333EA; */
-  border-style: none;
-  font-size: 85%;
-  float: left;
+  /* background-color: #BE185D; */
+  width: fit-content;
 }
-.btnlog {
-  color: white;
-  /* background: black; */
-  background-color: #202233;
-
-  border-style: none;
-  font-size: 100%;
-  border-radius: 6px;
+.part1-1{
+  /* background-color: #DC3D0A; */
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -19%;
 }
 
-.design-fatser {
+.item2{
+  font-size: 78%;
+  /* font-weight: 600; */
+  font-family: sans-serif;
+ 
+
+}
+.part1-2{
+  height: 100%;
+    /* background-color: red; */
+    width: fit-content;
+    top: -59px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1%;
+    align-items: center;
+    width: 25%;
+    justify-content: space-around;
+}
+
+
+.joinNow{
+  /* position: absolute;
+  top: 5%;
+  left: 68%; 
+  width: 8%;
+ 
+  display: block; */
+}
+
+
+
+.btnjoin{
+  color: white;
+             
+  background-color:#9333EA;
+ 
+              border-style: none;
+              font-size: 100%;
+              border-radius: 6px;
+              padding: 9%;
+              width: 97px;
+}
+ .btnlog {
+  color: white;
+             
+  background-color:#202233;
+ 
+              border-style: none;
+              font-size: 100%;
+              border-radius: 6px;
+              padding: 9%;
+              width: 97px;
+ }
+ .btnjoin:hover{
+  cursor: pointer;
+ }
+ .btnlog:hover{
+  cursor: pointer;
+ }
+
+ .design-fatser{
+
   text-align: center;
   color: white;
 }
@@ -570,7 +772,17 @@ body {
 }
 .btnnow:hover {
   background-color: #512f5e;
-}
+
+  cursor: pointer;
+ }
+
+ .nowp2{
+  color: white; background: #9333EA; border-style: none;
+ }
+ .viewp2{
+  color: white; background: #0F172A; border-color: white;
+ }
+
 
 .nowp2 {
   color: white;
@@ -583,8 +795,10 @@ body {
   border-color: white;
 }
 
+
 .imgfaster {
-  width: 100%;
+  width: 84%;
+
   height: 600px;
   border-radius: 20px;
   margin-top: 8%;
@@ -717,21 +931,51 @@ footer {
     margin-bottom: 1%;
   }
 
-  footer { 
-    justify-content: center;
-    gap: 16px;
-    
-    padding-bottom: -1px;
-    position: relative;
-    /* margin-bottom: 22px; */
-    top: -14px;
-   
-    align-items: center;
-    margin-top: 12%;
-   
-  }
-  .p-part {
-    margin-top: 0%;
+
+}
+.part-two .btnnow {
+  width: 25%;
+}
+.partone-p {
+  font-size: 55%;
+        width: 100%;
+  text-align: center;
+  position: relative;
+  line-height: 150%;
+  margin-top: 1.5%;
+
+}
+.part-two .design-fatser .design-fatser-intern {
+  font-size: 180%;
+}
+.design-fatser {
+  text-align: center;
+  color: white;
+ 
+}
+.part1-weeb{
+  position: relative;
+  left: -1%;
+  margin-bottom: 1%;
+}
+
+footer {
+  display: flex;
+  gap: 16px;
+  /* justify-content: flex-end; */
+  /* margin-right: 40%; */
+  padding-bottom: -1px;
+  position: relative;
+  /* margin-bottom: 22px; */
+  top: -14px;
+  /* flex-direction: column; */
+  align-items: center;
+  margin-top: 12%;
+  justify-content: center;
+}
+.p-part{
+  margin-top: 0%;
+
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -745,6 +989,16 @@ footer {
     text-align: center;
   }
 }
+
+
+}
+
+@media only screen and (max-width:400px){
+  .part-two .btnnow {
+    width: 31%;
+}
+}
+
 
 .part-seven {
   background: rgba(15, 23, 42, 1);
